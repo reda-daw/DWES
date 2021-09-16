@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>2DAW_DWES</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>InicioServlet</display-name>
+    <servlet-name>InicioServlet</servlet-name>
+    <servlet-class>servlets.InicioServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InicioServlet</servlet-name>
+    <url-pattern>/inicio</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AltaUsuarioServlet</display-name>
+    <servlet-name>AltaUsuarioServlet</servlet-name>
+    <servlet-class>AltaUsuarioServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AltaUsuarioServlet</servlet-name>
+    <url-pattern>/altaUsuario</url-pattern>
+  </servlet-mapping>
+</web-app>
